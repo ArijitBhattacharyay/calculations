@@ -1,0 +1,37 @@
+ul button:nth-child(odd){
+    background-color: red;
+    color: white;
+}
+
+ul button:nth-child(even){
+    background-color: blue;
+    color: black;
+}
+
+i{
+    color: white;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+.btn-go{
+    background-color: rgb(7, 188, 243);
+    border: none;
+    border-radius: 50%;
+    font-size: 3em;
+    width: 30%;
+    text-align: center; 
+    cursor: pointer;
+}
+
+.display{
+    display: none;
+}
+
+.playground{
+    display: none;
+}
