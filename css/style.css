@@ -35,3 +35,15 @@ input[type=number]::-webkit-outer-spin-button {
 .playground{
     display: none;
 }
+
+.empty{
+    width: 33%;
+}
+
+.result{
+    display: none;
+}
+
+.result i{
+    font-size: 25px;
+}
