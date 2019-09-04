@@ -5,34 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.css">
-
+    <script src="https://kit.fontawesome.com/0ec2895c5f.js"></script>
     <title>CALCULATIONS</title>
 </head>
 <body>
     
     <div class="container">
-        <h1 class="display-2 mt-4">Let's Do Some Calculations</h1>
-        <ul class="list-group list-group-horizontal mt-5 mb-4">
-            <button type="button" class="list-group-item flex-fill addsub">Addition/Subtraction</button>
-            <button type="button" class="list-group-item flex-fill mult">Multiplication</button>
-            <button type="button" class="list-group-item flex-fill squares">Squares</button>
-            <button type="button" class="list-group-item flex-fill cubes">Cubes</button>
+        <h1 class="mt-4 text-center">Let's Do Some Calculations</h1>
+        <ul class="list-group list-group-horizontal-sm mt-5 mb-4 text-center">
+            <li class="list-group-item flex-fill addsub mb-3">Addition/Subtraction</li>
+            <li class="list-group-item flex-fill mult mb-3">Multiplication</li>
+            <li class="list-group-item flex-fill squares mb-3"><a href="#display">Squares</a></li>
+            <li class="list-group-item flex-fill cubes mb-3">Cubes</li>
         </ul>
-        <div class="display">
+        <div class="display" id="display">   
             <div class="row">
-                <div class="col-9 description">
+                <div class="col-sm-12 col-md-9 description">
 
                 </div>
-                <div class="col">
+                <div class="col-sm-12 col-md-3 text-center go">
                     <p>Let's Go</p>
-                    <div class="btn-go"><i class="fa fa-arrow-right"></i></div>
+                    <i class="fas fa-arrow-right fa-7x btn-go"></i>
                 </div>
             </div>
         </div>
-        <div class="container playground">
-            <div class="timer text-center">
+        <div class="container playground mb-5">
+            <div class="timer text-center mb-3">
             </div>
         </div>
         <div class="result">
@@ -41,11 +40,12 @@
 
     </div>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
     <script src="js/index.js"></script>
+    <script src="js/links.js"></script>
 
 </body>
 </html>

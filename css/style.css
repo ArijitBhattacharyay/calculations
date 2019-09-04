@@ -1,11 +1,36 @@
-ul button:nth-child(odd){
-    background-color: red;
-    color: white;
+h1{
+    font-size: 5rem;
+    width: 100%;
 }
 
-ul button:nth-child(even){
-    background-color: blue;
+a:link {
+    text-decoration: none;
     color: black;
+}
+  
+a:visited {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    text-decoration: none;
+    color: black;
+}
+
+a:active {
+    text-decoration: none;
+    color: black;
+}
+
+ul li{
+    cursor: pointer;
+    border: 1px solid black !important;
+}
+
+.display i{
+    color:black;
+    cursor: pointer;
 }
 
 i{
@@ -18,15 +43,6 @@ input[type=number]::-webkit-outer-spin-button {
   margin: 0; 
 }
 
-.btn-go{
-    background-color: rgb(7, 188, 243);
-    border: none;
-    border-radius: 50%;
-    font-size: 3em;
-    width: 30%;
-    text-align: center; 
-    cursor: pointer;
-}
 
 .display{
     display: none;
@@ -46,4 +62,35 @@ input[type=number]::-webkit-outer-spin-button {
 
 .result i{
     font-size: 25px;
+}
+
+/* Extra small devices (portrait phones, less than 576px)
+No media query for `xs` since this is the default in Bootstrap */
+
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 576px) {
+    h1{
+        font-size: 3rem;
+    }
+    .col-sm-12 {
+        text-align: center;
+    }
+    .btn-go{
+        justify-content: center;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
 }

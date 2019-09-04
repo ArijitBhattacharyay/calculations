@@ -1,11 +1,12 @@
 let counter = 10;
 let timer;
-let totalQuestions = 2;
+let totalQuestions = 10;
 let question = 0;
 let questions = new Array(0);
 let answers = new Array(0);
+let clicked = false;
 
-$('.squares').click(function(){
+$('.squares').one('click',function(){
     $('.display').css('display','block');
     $('.description').append("<p>One number will be given. You have to square the Number</p>");
 });
@@ -17,11 +18,11 @@ $('.btn-go').click(function(){
     for(let i = 0;i<totalQuestions;i++){
         let n = Math.floor(Math.random()*10 + 1);
         questions.push(n);
-        let html = `<div class="row number-${i} mt-5">
-                        <div class="col-6 text-center">
+        let html = `<div class="row number-${i}">
+                        <div class="col-sm-12 col-md-6 text-center">
                             <p>Number:${n}</p>
                         </div>
-                        <div class="col-6 text-center">
+                        <div class="col-sm-12 col-md-6">
                             <span>Answer:</span>
                             <input type="number" class="answer-${i}">
                         </div>
